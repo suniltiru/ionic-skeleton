@@ -1,0 +1,5 @@
+<app-cart [items]="(cartItems$ | async) ?? []"></app-cart>
+<div class="checkout">
+  <button (click)="clearCart()">Clear Cart</button>
+  <button>Proceed to Checkout</button>
+</div>
